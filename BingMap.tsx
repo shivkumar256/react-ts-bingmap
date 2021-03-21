@@ -17,7 +17,7 @@ export default class BingMap extends React.Component<IMapProps, any> {
       this.initMap();
     });
   }
-  
+
   closeInfobox = (e:any) =>{
             this.pinInfobox.setOptions({visible:false});
         }
