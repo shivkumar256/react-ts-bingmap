@@ -9,7 +9,20 @@ h1, p {
     top:0px;
     width:256px;
 }
-
+.infobox1{
+            background-color: rgba(0,0,0,0.5);
+            color: white;
+            max-width: 200px;
+            border-radius: 10px;
+            padding: 10px;
+            font-size:12px;
+            pointer-events:auto !important;
+        }
+.infobox1 .title {
+                font-size: 14px;
+                font-weight: bold;
+                margin-bottom: 5px;
+            }
 .infobox_close{
     cursor:pointer;
     position: absolute;
