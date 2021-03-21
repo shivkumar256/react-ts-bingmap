@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import { render } from "react-dom";
 import BingMap from "./BingMap";
 import "./style.css";
+import "./MapStyle.css";
 
 interface AppProps {}
 interface AppState {
