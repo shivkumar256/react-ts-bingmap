@@ -8,6 +8,7 @@ interface IMapProps {
 export default class BingMap extends React.Component<IMapProps, any> {
   private mapRef = React.createRef<HTMLDivElement>();
   public pinInfobox:any;
+  public pushpinFrameHTML = '<div class="infobox"><a class="infobox_close" href="javascript:closeInfobox()"><img src="images/close.png"/></a><div class="infobox_content">{content}</div></div><div class="infobox_pointer"><img src="images/pointer_shadow.png"></div>';
 
   public componentDidMount() {
     loadBingApi().then(() => {
@@ -18,6 +19,23 @@ export default class BingMap extends React.Component<IMapProps, any> {
    this.pinInfobox.setOptions({ title: e.target.Title, description: e.target.Description, visible: true, offset: new Microsoft.Maps.Point(0, 25) });
     this.pinInfobox.setLocation(e.target.getLocation());
   }
+  displayInfobox2 = (e:any) =>
+         {
+             if (e.targetType == "pushpin") {
+                var pin = e.target;
+
+                var html = "<span class='infobox_title'>" + pin.title + "</span><br/>" + pin.description;
+
+                this.pinInfobox.setOptions({
+                    visible:true,
+                    offset: new Microsoft.Maps.Point(-33, 20),
+                    htmlContent: this.pushpinFrameHTML.replace('{content}',html)
+                });
+
+                //set location of infobox
+                this.pinInfobox.setLocation(pin.getLocation());
+            }
+         }
   public render() {
     return <div ref={this.mapRef} className="map" />;
   }
@@ -37,7 +55,7 @@ export default class BingMap extends React.Component<IMapProps, any> {
 
     var infoboxLayer = new Microsoft.Maps.EntityCollection();
     var pinLayer = new Microsoft.Maps.EntityCollection();
-
+    
     // Create the info box for the pushpin
     this.pinInfobox = new Microsoft.Maps.Infobox(new Microsoft.Maps.Location(0, 0), { visible: false });
     infoboxLayer.push(this.pinInfobox);
