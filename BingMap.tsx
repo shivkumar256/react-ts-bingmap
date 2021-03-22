@@ -111,9 +111,9 @@ displayInfobox1 = (e:any) =>
     var pushpinInfos = [];
    
 
-    pushpinInfos[0] = { 'lat': 19.0826881, 'lng': 72.6009738, 'title': 'MUMBAI - HEAD OFFICE', 'description': '72. BUSINESS PARK. MAROL INDUSTRIAL AREA CROSS ROAD "C". ANDHERI EAST. MUMBAI MAHARASHTRA INDIA','phone': '+ 91 22 6274 2000','email': 'bvindia.corporate@in.bureauveritas.com','url': 'https://www.bureauveritas.co.in/'};
+    pushpinInfos[0] = { 'lat': 19.0826881, 'lng': 72.6009738, 'title': 'Office Title 1', 'description': 'Office Address 1','phone': '+ 91 00 0000 0000','email': 'test@in.bureauveritas.com','url': 'https://www.google.co.in/'};
     
-    pushpinInfos[1] = { 'lat': 13.0480438, 'lng': 79.9287977, 'title': 'CHENNAI - I & F OFFICE', 'description': 'CHAMIERS TOWERS. 7TH FLOOR NEW DOOR NO. 37. CHAMIERS ROAD TEYNAMPET CHENNAI TAMIL NADU INDIA','phone': '+ 91 44 4226 4500','email': 'bv.chennai@bureauveritas.com','url': 'https://www.bureauveritas.co.in/'};
+    pushpinInfos[1] = { 'lat': 13.0480438, 'lng': 79.9287977, 'title': 'Office Title 2', 'description': 'Office Address 2','phone': '+ 91 00 0000 0000','email': 'test@in.bureauveritas.com','url': 'https://www.google.co.in/'};
 
     var infoboxLayer = new Microsoft.Maps.EntityCollection();
     var pinLayer = new Microsoft.Maps.EntityCollection();
