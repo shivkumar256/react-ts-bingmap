@@ -10,9 +10,9 @@ h1, p {
     width:256px;
 }
 .infobox1{
-            background-color: rgba(0,0,0,0.5);
+            background-color: rgba(0, 0, 0, 0.7);
             color: white;
-            max-width: 200px;
+            max-width: 256px;
             border-radius: 10px;
             padding: 10px;
             font-size:12px;
@@ -22,6 +22,21 @@ h1, p {
                 font-size: 14px;
                 font-weight: bold;
                 margin-bottom: 5px;
+            }
+.infobox1 .phone {
+                font-size: 12px;
+                margin-bottom: 5px;
+                color: rgb(250, 246, 29);
+            }
+            .infobox1 .email {
+                font-size: 12px;
+                margin-bottom: 5px;
+                color: rgb(180, 255, 196);
+            }
+            .infobox1 .url {
+                font-size: 12px;
+                margin-bottom: 5px;
+                color: rgb(255, 196, 194);
             }
 .infobox_close{
     cursor:pointer;
