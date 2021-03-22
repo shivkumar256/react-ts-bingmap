@@ -138,7 +138,7 @@ displayInfobox1 = (e:any) =>
 
         pinLayer.push(pin); 
         Microsoft.Maps.Events.addHandler(pin, 'click', this.displayInfobox1);
-         Microsoft.Maps.Events.addHandler(pin, 'mouseover', this.closeInfobox);
+        Microsoft.Maps.Events.addHandler(pin, 'mouseover', this.closeInfobox);
     }
  
     map.entities.push(pinLayer);
