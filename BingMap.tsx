@@ -111,9 +111,9 @@ displayInfobox1 = (e:any) =>
     var pushpinInfos = [];
    
 
-    pushpinInfos[0] = { 'lat': 19.0826881, 'lng': 72.6009738, 'title': 'Office Title 1', 'description': 'Office Address 1','phone': '+ 91 00 0000 0000','email': 'test@in.bureauveritas.com','url': 'https://www.google.co.in/'};
+    pushpinInfos[0] = { 'lat': 47.2382007, 'lng': -1.6300963, 'title': 'Office Title 1', 'description': 'Office Address 1','phone': '+ 91 00 0000 0000','email': 'test@in.bureauveritas.com','url': 'https://www.google.co.in/'};
     
-    pushpinInfos[1] = { 'lat': 13.0480438, 'lng': 79.9287977, 'title': 'Office Title 2', 'description': 'Office Address 2','phone': '+ 91 00 0000 0000','email': 'test@in.bureauveritas.com','url': 'https://www.google.co.in/'};
+    pushpinInfos[1] = { 'lat': 47.1530357, 'lng': -1.5378797, 'title': 'Office Title 2', 'description': 'Office Address 2','phone': '+ 91 00 0000 0000','email': 'test@in.bureauveritas.com','url': 'https://www.google.co.in/'};
 
     var infoboxLayer = new Microsoft.Maps.EntityCollection();
     var pinLayer = new Microsoft.Maps.EntityCollection();
