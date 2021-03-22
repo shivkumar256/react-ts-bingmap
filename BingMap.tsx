@@ -115,12 +115,17 @@ displayInfobox1 = (e:any) =>
     
     pushpinInfos[1] = { 'lat': 47.1530357, 'lng': -1.5378797, 'title': 'Office Title 2', 'description': 'Office Address 2','phone': '+ 91 00 0000 0000','email': 'test@in.bureauveritas.com','url': 'https://www.google.co.in/'};
 
-    var infoboxLayer = new Microsoft.Maps.EntityCollection();
-    var pinLayer = new Microsoft.Maps.EntityCollection();
+    //var infoboxLayer = new Microsoft.Maps.EntityCollection();
+    //var pinLayer = new Microsoft.Maps.EntityCollection();
+
+    //var infoboxLayer= new Microsoft.Maps.Layer();
+    var pinLayer= new Microsoft.Maps.Layer();
     
     // Create the info box for the pushpin
     this.pinInfobox = new Microsoft.Maps.Infobox(new Microsoft.Maps.Location(0, 0), { visible: false });
-    infoboxLayer.push(this.pinInfobox);
+    
+    //infoboxLayer.push(this.pinInfobox);
+    //infoboxLayer.add(this.pinInfobox);
 
     var locs = [];
     for (var i = 0 ; i < pushpinInfos.length; i++) {
@@ -136,13 +141,17 @@ displayInfobox1 = (e:any) =>
         pin.email=pushpinInfos[i].email;
         pin.url=pushpinInfos[i].url;
 
-        pinLayer.push(pin); 
+        pinLayer.add(pin); 
+
         Microsoft.Maps.Events.addHandler(pin, 'click', this.displayInfobox1);
         Microsoft.Maps.Events.addHandler(pin, 'mouseover', this.closeInfobox);
     }
  
-    map.entities.push(pinLayer);
-    map.entities.push(infoboxLayer);
+    //map.entities.push(pinLayer);
+    //map.entities.push(infoboxLayer);
+
+    this.pinInfobox.setMap(map);
+    map.layers.insert(pinLayer);
 
     var bestview = Microsoft.Maps.LocationRect.fromLocations(locs);
     map.setView({ center: bestview.center, zoom: 10 });
