@@ -114,7 +114,51 @@ displayInfobox1 = (e:any) =>
     pushpinInfos[0] = { 'lat': 47.2382007, 'lng': -1.6300963, 'title': 'Office Title 1', 'description': 'Office Address 1','phone': '+ 91 00 0000 0000','email': 'test@in.bureauveritas.com','url': 'https://www.google.co.in/'};
     
     pushpinInfos[1] = { 'lat': 47.1530357, 'lng': -1.5378797, 'title': 'Office Title 2', 'description': 'Office Address 2','phone': '+ 91 00 0000 0000','email': 'test@in.bureauveritas.com','url': 'https://www.google.co.in/'};
+pushpinInfos[2] = {
+      lat: 48.858093,
+      lng: 2.294694,
+      title: "Office Paris",
+      description: "Office Address 1",
+      phone: "+ 91 00 0000 0000",
+      email: "test@in.bureauveritas.com",
+      url: "https://www.google.co.in/"
+    };
 
+ 
+
+    pushpinInfos[3] = {
+      lat: 22.364977108699,
+      lng: 114.13427443698,
+      title: "Office  HK",
+      description: "Office Address 1",
+      phone: "+ 91 00 0000 0000",
+      email: "test@in.bureauveritas.com",
+      url: "https://www.google.co.in/"
+    };
+
+ 
+
+    pushpinInfos[4] = {
+      lat: 29.9450511546317,
+      lng: -95.4021747879735,
+      title: "Office America",
+      description: "Office Address 1",
+      phone: "+ 91 00 0000 0000",
+      email: "test@in.bureauveritas.com",
+      url: "https://www.google.co.in/"
+    };
+
+ 
+
+    pushpinInfos[5] = {
+      lat: 6.18434579312852,
+      lng: -75.5895838190349,
+      title: "Office Colombia",
+      description: "Office Address 1",
+      phone: "+ 91 00 0000 0000",
+      email: "test@in.bureauveritas.com",
+      url: "https://www.google.co.in/"
+    };
     //var infoboxLayer = new Microsoft.Maps.EntityCollection();
     //var pinLayer = new Microsoft.Maps.EntityCollection();
 
