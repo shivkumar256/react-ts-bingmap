@@ -159,6 +159,36 @@ pushpinInfos[2] = {
       email: "test@in.bureauveritas.com",
       url: "https://www.google.co.in/"
     };
+    pushpinInfos[6] = {
+      lat: 49.2546208484379,
+      lng: -122.995610775616,
+      title: "Office Canada",
+      description: "Office Address 1",
+      phone: "+ 91 00 0000 0000",
+      email: "test@in.bureauveritas.com",
+      url: "https://www.google.co.in/"
+    };
+
+ 
+
+    pushpinInfos[7] = {
+      lat: 55.6953062709901,
+      lng: 37.7584391977027,
+      title: "Office Moscow",
+      description: "Office Address 1",
+      phone: "+ 91 00 0000 0000",
+      email: "test@in.bureauveritas.com",
+      url: "https://www.google.co.in/"
+    };
+    pushpinInfos[8] = {
+      lat: 28.5401977602141,
+      lng: 77.3439350947973,
+      title: "Office Moscow",
+      description: "Office Address 1",
+      phone: "+ 91 00 0000 0000",
+      email: "test@in.bureauveritas.com",
+      url: "https://www.google.co.in/"
+    };
     //var infoboxLayer = new Microsoft.Maps.EntityCollection();
     //var pinLayer = new Microsoft.Maps.EntityCollection();
 
