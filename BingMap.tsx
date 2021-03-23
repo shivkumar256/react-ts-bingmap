@@ -228,7 +228,7 @@ pushpinInfos[2] = {
     map.layers.insert(pinLayer);
 
     var bestview = Microsoft.Maps.LocationRect.fromLocations(locs);
-    map.setView({ center: bestview.center, zoom: 10 });
+    map.setView({ center: bestview.center, zoom: 1 });
     return map;
   }
 }
