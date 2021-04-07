@@ -14,7 +14,7 @@ export default class BingMap extends React.Component<IMapProps, any> {
             this.pinInfobox.setOptions({visible:false});
         }
 
-  public pushpinFrameBVHTML = '<div style="overflow-wrap: break-word; color: rgb(255, 255, 255); display: block;"><span class="teaser-offer--close"></span><div class="teaser-offer place map-layer"><p class="teaser-offer--title">{title}</p><div class="teaser-offer--content"><div class="teaser-offer--content--inner"><div class="teaser-offer--text"><div class="teaser-offer--contact"><address class="teaser-offer--place physical-address"><span class="highlight">{description}</span></address><ul class="teaser-offer--infos"><li class="teaser-offer--infos-item phone"><a href="tel:+7 347 246 92 74" title="Call to +7 347 246 92 74" class="phone-link">+7 347 246 92 74</a></li><li class="teaser-offer--infos-item email"><a href="mailto:ufa.office@inspectorate.ru">ufa.office@inspectorate.ru</a></li><li class="teaser-offer--infos-item website"><a href="{url}" target="_blank">{url}</a></li></ul></div></div></div></div></div></div>';
+  public pushpinFrameBVHTML = '<div style="overflow-wrap: break-word; color: rgb(255, 255, 255); display: block;"><div class="teaser-offer place map-layer"><p class="teaser-offer--title">BUREAU VERITAS DEL PERU S.A.</p><div class="teaser-offer--content"><div class="teaser-offer--content--inner"><div class="teaser-offer--text"><div class="teaser-offer--contact"><address class="teaser-offer--place physical-address"><span class="highlight">LOCAL SAN ISIDRO AV. CAMINO REAL 390 PISO 14 (1402) LIMA Peru</span></address><ul class="teaser-offer--infos"><li class="teaser-offer--infos-item phone"><a href="tel:+7 347 246 92 74" title="Call to +7 347 246 92 74" class="phone-link">+7 347 246 92 74</a></li><li class="teaser-offer--infos-item email"><a href="mailto:ufa.office@inspectorate.ru">ufa.office@inspectorate.ru</a></li><li class="teaser-offer--infos-item website"><a href=""https://google.co.in" target="_blank">https://google.co.in</a></li></ul></div></div></div></div></div></div>';
 
 
   public pushpinFrameHTML = '<div class="infobox"><a class="infobox_close" href="javascript:{'+this.closeInfobox+'}"><img src="images/close.png"/></a><div class="infobox_content">{content}</div></div><div class="infobox_pointer"><img src="images/pointer_shadow.png"></div>';
@@ -217,7 +217,7 @@ pushpinInfos[2] = {
 
         pinLayer.add(pin); 
 
-        Microsoft.Maps.Events.addHandler(pin, 'click', this.displayInfobox1);
+        Microsoft.Maps.Events.addHandler(pin, 'click', this.displayInfobox0);
         Microsoft.Maps.Events.addHandler(pin, 'mouseover', this.closeInfobox);
     }
  
